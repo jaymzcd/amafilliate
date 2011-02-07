@@ -7,6 +7,6 @@ class AmazonAffiliateMiddleware(object):
         self.affiliate_code = 'jaymzcd'
         
     def process_response(self, request, response):
-        response.content = re.sub(r'(amazon.co(m|.uk)/[\\\w-]+)', r'\1/%s' % \
+        response.content = re.sub(r'(amazon.co(m|.uk)/[/\w-]+)', r'\1%s' % \
             self.affiliate_code, response.content)
         return response
