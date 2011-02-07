@@ -74,6 +74,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'amazonaffiliate.middleware.AmazonAffiliateMiddleware',
 )
 
 ROOT_URLCONF = 'urls'
@@ -92,4 +93,5 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.admin',
+    'amazonaffiliate',
 )

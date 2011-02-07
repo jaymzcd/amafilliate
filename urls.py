@@ -5,6 +5,9 @@ from django.conf.urls.defaults import *
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+    ('^$', 'django.views.generic.simple.direct_to_template', {
+        'template_name': 'master.html',
+        }, 'home'),
     # Example:
     # (r'^amafilliate/', include('amafilliate.foo.urls')),
 
