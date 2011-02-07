@@ -1,0 +1,4 @@
+from amazonaffiliate.middleware import AmazonAffiliateMiddleware
+from django.utils.decorators import decorator_from_middleware
+
+amazon_affiliate = decorator_from_middleware(AmazonAffiliateMiddleware)
