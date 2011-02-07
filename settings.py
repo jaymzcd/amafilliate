@@ -95,3 +95,5 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'amazonaffiliate',
 )
+
+AFFILIATE_USER = 'jaymzcd'

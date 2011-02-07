@@ -1,0 +1,3 @@
+
+class AmazonAffiliateException(Exception):
+    pass
